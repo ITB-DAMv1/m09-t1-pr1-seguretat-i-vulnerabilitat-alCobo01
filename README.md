@@ -4,10 +4,23 @@
 **L’organització OWASP Foundation va actualitzar en 2021 el seu Top 10 de vulnerabilitats més trobades en aplicacions web.**
 - Escull 3 vulnerabilitats d’aquesta llista i descriu-les. Escriu l’impacte que tenen a la seguretat i quins danys pot 
 arribar a fer un atac en aquesta vulnerabilitat. Enumera diferents mesures i tècniques per poder evitar-les.
-
+  1. Falles criptogràfiques
+     -  Els errors criptogràfics són on els atacants solen dirigir dades confidencials, com contrasenyes, números de targetes de crèdit 
+        i informació personal, quan no les protegeixen correctament. Aquesta és la causa principal de l'exposició de dades confidencials.
+     - Un atacant que s'aprofita d'aquesta vulnerabilitat pot guanyar accés no autoritzat a dades encriptades, desencriptarles
+        i explotar-les pel seu benefici.
+     - Per evitar aquesta vulnerabilitat, hem d'evitar els protocols no segurs com HTTP, FTP i SMTP i utilitzar les seves
+       versions amb encriptació. No hem de guardar dades en text pla a una base de dades, i no hem de fer servir algoritmes
+       criptogràfics antics o poc segurs.
+  2. Fallades d'identificació i autenticació
+     - Les fallades d'identificació i autenticació són vulnerabilitats de seguretat que es poden produir quan un sistema o aplicació no 
+       identifica o autentica correctament un usuari. Això pot permetre als atacants obtenir accés no autoritzat a sistemes i dades.
+     - Amb aquesta vulnerabilitat, els atacants poden accedir a dades i sistemes de forma no autoritzada.
+     - Per 
+  3. Fallades d'integritat en dades i software
 ***
 
-## Excercici 2.
+## Exercici 2.
 **Obre el següent enllaç ([sql inseckten](https://www.sql-insekten.de/)) i realitza un mínim de 7 nivells fent servir tècniques d’injecció SQL.**
 - Copia cada una de les sentències SQL resultant que has realitzat a cada nivell i comenta que has aconseguit.
 - Enumera i raona diferents formes que pot evitar un atac per SQL injection en projectes fets amb Razor Pages i Entity Framework. 
@@ -45,3 +58,5 @@ desencriptat. L’algoritme de RSA necessita una clau pública per encriptar i u
 ***
 
 ## Exercici 6 (Bibliografia)
+això s'ha de canviar yk... 
+https://www.pentestpeople.com/blog-posts/owasp-top-ten-cryptographic-failures
